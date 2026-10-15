@@ -4,11 +4,11 @@ This notebook uses an **inverse Physics-Informed Neural Network (FPINN)** with F
 
 The Lorenz equations are:
 
-\[
+$$
 \frac{dx}{dt}=\sigma(y-x),\quad
 \frac{dy}{dt}=x(\rho-z)-y,\quad
 \frac{dz}{dt}=xy-\beta z.
-\]
+$$
 
 Fourier features enrich the time input with sinusoidal functions, helping the network represent complex trajectories. The model combines these features with gated residual blocks and a trainable global skip connection.
 
